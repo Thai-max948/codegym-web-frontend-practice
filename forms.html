@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form đăng ký học viên</title>
+  <style>
+    body { margin: 0; padding: 32px 16px; background: #f3f6fb; color: #1f2937; font-family: Arial, sans-serif; }
+    main { max-width: 760px; margin: auto; }
+    form { margin: 20px 0; padding: 24px; background: #fff; border: 1px solid #dbe2ea; border-radius: 12px; }
+    label { display: inline-block; margin: 8px 0 4px; }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+      box-sizing: border-box; width: 100%; padding: 10px; border: 1px solid #aeb8c4; border-radius: 6px;
+    }
+    fieldset { margin: 16px 0; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; }
+    fieldset label { margin-right: 18px; }
+    textarea { min-height: 80px; resize: vertical; }
+    button { margin-top: 14px; padding: 10px 16px; border: 0; border-radius: 6px; cursor: pointer; }
+    button[type="submit"] { background: #2563eb; color: white; }
+    button[type="reset"] { background: #e5e7eb; color: #111827; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Thực hành Form HTML</h1>
+    <section aria-labelledby="simple-title">
+      <h2 id="simple-title">Form đơn giản</h2>
+      <form action="#" method="get">
+        <label for="yourname">Họ và tên</label>
+        <input type="text" id="yourname" name="yourname" required>
+        <label for="email-simple">Email</label>
+        <input type="email" id="email-simple" name="email" required>
+        <fieldset>
+          <legend>Sở thích</legend>
+          <label><input type="checkbox" name="hobby" value="reading"> Đọc sách</label>
+          <label><input type="checkbox" name="hobby" value="sports"> Thể thao</label>
+          <label><input type="checkbox" name="hobby" value="music"> Âm nhạc</label>
+        </fieldset>
+        <button type="submit">Gửi thông tin</button>
+        <button type="reset">Nhập lại</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="registration-title">
+      <h2 id="registration-title">Form đăng ký học viên</h2>
+      <form action="#" method="get">
+        <label for="fullname">Họ và tên</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone">
+        <label for="birthday">Ngày sinh</label>
+        <input type="date" id="birthday" name="birthday">
+        <fieldset>
+          <legend>Giới tính</legend>
+          <label><input type="radio" name="gender" value="male"> Nam</label>
+          <label><input type="radio" name="gender" value="female"> Nữ</label>
+          <label><input type="radio" name="gender" value="other"> Khác</label>
+        </fieldset>
+        <label for="address">Địa chỉ</label>
+        <textarea id="address" name="address"></textarea>
+        <label for="course">Khóa học</label>
+        <select id="course" name="course">
+          <option value="">Chọn khóa học</option>
+          <option>HTML &amp; CSS</option>
+          <option>JavaScript</option>
+          <option>Java</option>
+          <option>Python</option>
+        </select>
+        <fieldset>
+          <legend>Hình thức học</legend>
+          <label><input type="radio" name="study_type" value="online"> Online</label>
+          <label><input type="radio" name="study_type" value="offline"> Offline</label>
+        </fieldset>
+        <fieldset>
+          <legend>Sở thích</legend>
+          <label><input type="checkbox" name="hobby" value="reading"> Đọc sách</label>
+          <label><input type="checkbox" name="hobby" value="coding"> Lập trình</label>
+          <label><input type="checkbox" name="hobby" value="sports"> Thể thao</label>
+        </fieldset>
+        <label for="note">Ghi chú</label>
+        <textarea id="note" name="note"></textarea>
+        <button type="submit">Đăng ký</button>
+        <button type="reset">Nhập lại</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
